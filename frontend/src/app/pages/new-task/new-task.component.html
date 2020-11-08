@@ -1,0 +1,19 @@
+<div class="centered-content">
+    <div class="box-modal">
+      <h1 class="title">Add a new task</h1>
+  
+      <input #taskTitleInput
+        class="input is-normal has-background-light"
+        type="text"
+        placeholder="Enter a task..."
+      /><br>
+  
+      <div class="buttons is-right" style="margin-top: 10px">
+        <button class="button" routerLink="/">Cancel</button>
+        <button class="button is-primary has-text-white is-normal" (click)="createNewTask(taskTitleInput.value)">
+          <strong>Add Task</strong>
+        </button>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,22 @@
+<div class="centered-content">
+  <div class="box-modal">
+    <h1 class="title">Edit a list</h1>
+
+    <input
+      #listTitleInput
+      class="input is-normal has-background-light"
+      type="text"
+      placeholder="Type a title"
+    /><br />
+
+    <div class="buttons is-right" style="margin-top: 10px">
+      <button class="button" routerLink="/">Cancel</button>
+      <button
+        class="button is-primary has-text-white is-normal"
+        (click)="updatedList(listTitleInput.value)"
+      >
+        <strong>Create</strong>
+      </button>
+    </div>
+  </div>
+</div>
